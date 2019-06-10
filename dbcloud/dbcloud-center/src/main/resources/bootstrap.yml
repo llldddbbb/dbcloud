@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: dbcloud-center
+server:
+  # 启动端口
+  port: 7001
+
+eureka:
+  client:
+    # false 不将自己注册
+    register-with-eureka: false
+    fetch-registry: false

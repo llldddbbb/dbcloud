@@ -9,11 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>dbcloud-service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>dbcloud-user</module>
+    </modules>
+
 
 </project>
