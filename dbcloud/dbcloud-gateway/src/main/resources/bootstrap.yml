@@ -1,0 +1,17 @@
+server:
+  port: 7003
+spring:
+  application:
+    name: dbcloud-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: dbcloud-user
+        uri: lb://dbcloud-user
+        predicates:
+        - Path=/**
+eureka:
+  client:
+    serviceUrl:
+      # Eureka 集群地址
+      defaultZone: http://localhost:7001/eureka/

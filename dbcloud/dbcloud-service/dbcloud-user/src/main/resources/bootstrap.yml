@@ -5,9 +5,6 @@ spring:
     name: dbcloud-user
 # 注册中心配置
 eureka:
-  instance:
-    # 表示将自己IP注册到Eureka
-    prefer-ip-address: true
   client:
     service-url:
       # Eureka 集群地址
