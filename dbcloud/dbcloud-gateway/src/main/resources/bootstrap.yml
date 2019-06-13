@@ -1,15 +1,19 @@
 server:
   port: 7003
+  # 配置中心
 spring:
   application:
     name: dbcloud-gateway
   cloud:
-    gateway:
-      routes:
-      - id: dbcloud-user
-        uri: lb://dbcloud-user
-        predicates:
-        - Path=/**
+    config:
+      fail-fast: true
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
+      discovery:
+        enabled: true
+        service-id: dbcloud-config
+  profiles:
+    active: dev
 eureka:
   client:
     serviceUrl:

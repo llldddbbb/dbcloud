@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: dbcloud-user
+        uri: lb://dbcloud-user
+        predicates:
+        - Path=/**

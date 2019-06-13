@@ -13,6 +13,7 @@
         <module>dbcloud-service</module>
         <module>dbcloud-config</module>
         <module>dbcloud-gateway</module>
+        <module>dbcloud-common</module>
     </modules>
 
     <properties>
